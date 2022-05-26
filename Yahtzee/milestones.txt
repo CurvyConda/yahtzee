@@ -1,0 +1,41 @@
+Game of Yahtzee
+
+ game steps = potential milestones
+
+- Create player card
+    - Upper Section
+        - Aces
+        - Twos
+        - Threes
+        - Fours
+        - Fives
+        - Sixes
+        - Total upper
+        - Bonus
+    - bonus of 35 points if score is higher than 63
+    - Lower Section
+        - 3 of a kind
+        - 4 of a kind
+        - Full House
+        - Sml straight (sq of 4)
+        - Lrg straight (sq of 5)
+        - Chance
+        - Yahtzee
+        - Yahtzee Bonus
+        - Total Lower
+        - Total Upper
+        - Grand Total
+- Select number of players to start game (Optional)
+    - Maximum 4 players
+    - Default to 1 player
+- Start the game
+- Roll the dice
+    - Roll first time [V]
+    - Allow reroll logic
+- Choose what to reroll or not x2 max
+    - Select which die to reroll logic
+- View player card
+    - View table in terminal
+    - https://pythonfusion.com/table-on-console-python/
+- Allocate play to payer card
+    - Allocate play to player card logic
