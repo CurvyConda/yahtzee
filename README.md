@@ -1,2 +1,2 @@
 # yahtzee
-Leaning Project - Yahtzee in terminal 
+Leaning project - Yahtzee in terminal 
