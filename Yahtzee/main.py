@@ -1,22 +1,28 @@
-import roll
-from prettytable import PrettyTable
-from rich import print
+from roll import roll_the_dice
+import resources.score_card
 
+def main():
+    while not resources.score_card.grand_total_score == 100:
+        f = open("resources/game_text.txt", "r")
+        file_contents = f.read()
+        print(file_contents)
 
-player_card = PrettyTable()
-player_card.title = 'YAHTZEE Player Card'
-player_card.field_names = ['Upper Section', 'Points']
-player_card.align = 'l'
-player_card.add_row(['Aces', []])
-player_card.add_row(['Twos', []])
-player_card.add_row(['Threes', []])
-player_card.add_row(['Fours', []])
-player_card.add_row(['Fives', []])
-player_card.add_row(['Sixes', []])
-player_card.add_row(['Total Upper', []])
-player_card.add_row(['Bonus*', []])
+        allowed_Characters = ["N", "S", "C", "Q"]
 
+        option = input(">>> ").upper()
+
+        if not option in allowed_Characters:
+            raise ValueError("Selected input is not an option")
+        elif option == "N":
+            roll_the_dice(5)
+        elif option == "S":
+            print("Show Score")
+        elif option == "C": 
+             resources.score_card.display_score_card()
+        elif option == "Q":
+            print("Thank you for playing")
+            exit()
 
 
 if __name__ == "__main__":
-    print(player_card)
+    main()

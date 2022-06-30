@@ -1,0 +1,5 @@
+MENU OPTIONS:
+    Play next turn [N]
+    Show score [S]
+    Show score card [C]
+    Quit game [Q]
